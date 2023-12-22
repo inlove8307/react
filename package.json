@@ -1,0 +1,24 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "set ServerEnv=local && next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "next": "14.0.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "zustand": "^4.4.4"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.0.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0"
+  }
+}

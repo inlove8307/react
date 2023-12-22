@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:jsx-a11y/recommended"
+  ],
+  "plugins": [
+    "jsx-a11y"
+  ],
+  "rules": {
+    "react-hooks/exhaustive-deps": "off",           // useEffect 의존성 배열 관리 룰. 필요에따라 의존성을 추가하기 위해 제거
+    "jsx-a11y/no-noninteractive-tabindex": "off",   // div 같은곹에 tabindex 못주게 하는 롤 제거
+    "jsx-a11y/tabindex-no-positive": "off"          // tabindex 데이터 타입 롤 제외
+  }
+}

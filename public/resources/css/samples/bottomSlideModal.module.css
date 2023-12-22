@@ -1,0 +1,33 @@
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 1000;
+}
+
+.modalContent {
+    background: white;
+    width: 100%;
+    max-height: 50vh; /* 화면의 높이의 절반까지만 늘어나도록 설정 */
+    overflow-y: auto; /* 내용이 넘칠 경우 스크롤 허용 */
+    border-radius: 20px 20px 0 0;
+    padding: 20px;
+    box-sizing: border-box;
+    animation: slideUp 0.3s ease-out;
+  }
